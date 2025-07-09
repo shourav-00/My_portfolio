@@ -3,9 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>portfolio</title>
+    <style>
+        .b-clr{
+            color:white;
+            font-weight: 700;
+            padding: 10px;
+            background-color:chocolate;
+            border-radius: 5px;
+            border:none;
+        }
+        nav ul{
+            display: flex;
+           align-items: center;
+           
+        }
+        nav ul li{
+            list-style: none;
+            align-items: center;
+            margin-right: 50px;
+        }
+        ul{
+            
+            text-decoration: none;
+        }
+        #r{
+            color:chocolate;
+        }
+        nav{
+            align-items: center;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 50px;
+        }
+        #snd-half{
+            display:flex;
+            align-items: center;
+            justify-content: space-between; 
+        }
+        /* .skill{
+            display:flex;
+            align-items: center;
+            justify-content: space-between; 
+        } */
+        #id{
+            max-width: 580px;
+            margin: 0px 30px 0px 100px;
+        }
+        #header{
+            background-image: url(background.png);
+            background-position: bottom right;
+            /* width: 200px; */
+            height: auto;
+            border-radius: 10px;
+           
+            background-repeat:no-repeat; 
+        }
+
+        .b_h{
+            
+            text-align: center;
+
+        }
+        .bc{
+            background-color:azure;
+            padding: 30px 25px;
+        }
+        #main{
+            padding:130px 150px;
+        }
+        /* .testing{
+            list-style: none;
+            display:flex;
+            align-items: center;
+            justify-content: space-between; 
+        } */
+        #about{
+            display: flex;
+            justify-content: space-between;
+         }
+        .class{
+             display: flex;
+             /* align-items: center;*/
+             justify-content: space-between;
+             gap: 30px; 
+            /* flex-wrap: 30px;  */
+         }
+        #c{
+            text-align: center;
+        }
+        .skil{
+            margin: 80px 30px ;
+            margin-bottom: 30px;
+        }
+        
+        .class-skill{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .skill{
+            padding: 30px;
+            box-shadow: 0px 6px 50px 0px wheat;
+        }
+
+        .contain{
+            display: flex;
+            /* justify-content: space-between;
+            align-items: flex-start; */
+            gap: 24px;
+            /* padding: 20px 0px; */
+        }
+        /* .resume-colum {
+        width: 48%; /* Ensure equal width and prevent overflow */
+        #hui{
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .butt{
+            margin-top: 30px;
+            text-align: center;
+            background-color: chocolate;
+           
+        }
+        #tst{
+            text-align:center;
+            
+        }
+        .bg-c{
+            background-color:blanchedalmond;
+            margin:50px 46px;
+            padding: 20px 30px;
+            justify-content: space-between;
+
+        }
+        .img{
+            display: flex;
+            gap:20px;
+        }
+        .last-c{
+            display: flex;
+            gap: 20px;
+        }
+        .pad{
+            padding: 10px;
+            color:azure;
+        }
+        .c1{
+            margin-right: 20px;
+        }
+
+
+    </style>
 </head>
 <body>
-    
+    <header id="header">
+        <nav>
+    <h3>Shou<span id="r">r</span>av</h3>
+    <ul>
+        <li>Portfolio</li>
+        <li>Blog</li>
+        <li><button class="b-clr">Hire me</button></li>
+    </ul>
+        </nav>
+        <div id="snd-half">
+            <div id="id">
+            <h3>Hi,I am</h3>
+            <h1>Shourav Chowdhury</h1>
+            <p>I am learning Web development.I have completed basic knowledge about "HTML" and "CSS".I still want to go as an programmer.Pray for me.</p>
+            <button class="b-clr">Download CV</button>
+            <button class="b-clr">Contact me</button>
+            </div>
+            
+            <img src="images.webp" width="800px" height="400px">
+            </div>  
+    </header>
+    <main id="main">
+        <section class="bc">
+        <h3 class="b_h">About Me</h3>
+        <p>I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and 
+slick websites that provide real value to the end user. Thousands of clients have procured 
+exceptional resulfs while working with me. Delivering work within time and budget which meets 
+clients requirements in our mata.</p>
+        <!-- <ul class="testing">
+            <li>Name:</li>
+            Shourav Chowdhury
+            <li>Email:</li>
+            shouravchowdhur400@gmail.com
+            <li>Date of Birth:</li>
+            10 Oct 2003
+            <li>From:</li>
+            Dhaka,BD
+        </ul> -->
+        <div id="about">
+            <div class="aitems">
+                <p class="it">Name:</p>
+                <p class="id"><b>Shourav Chowdhury</b></p>
+            </div>
+            <div class="aitems">
+                <p class="it">Email:</p>
+                <p class="id"><b>shouravchowdhury400@gmail.com</b></p>  
+            </div>
+            <div class="aitems">
+                <p class="it">Date of birth:</p>
+                <p class="id"><b>10 Oct,2003</b></p>
+                
+            </div>
+            <div class="aitems">
+                <p class="it">From:</p>
+                <p class="id"><b>Dhaka,BD</b></p>
+                
+            </div>
+            </section>
+        </div>
+        
+        <section class="skil">
+            <div class="bc">
+            <h3 id="c">What I do</h3>
+            <p>I have more than 10 years experience building software for clients all over the world. Below is a quick
+overview of my main technical skill sets and technologies i use. Want to find out more about my experience?Check out my online resume and project portfolio.Vanilla JavaScriptList skill/technologies here. You can change the icon above to any of the
+1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.React
+List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available.Aenean commodo ligula eget dolor.Node.js List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="class">
+                <div class="skill">
+                    <img src="icons/js.png">
+                    <h4 class="skill-title">Vanilla Javascript</h4>
+                    <p class="skill-des">List skill/technologies
+here. You can change the
+icon above to any of the
+1500+ FontAwesome 5
+free icons available.
+Aenean commodo ligula
+eget dolor.</p>
+                </div>
+                <div class="skill">
+                    <img src="icons/react.png">
+                    <h4 class="skill-title">React</h4>
+                    <p class="skill-des">List skill/technologies
+here. You can change the
+icon above to any of the
+1500+ FontAwesome 5
+free icons available.
+Aenean commodo ligula
+eget dolor.
+Node.js
+List skill/technologies
+here. You can change the
+icon above to any of the
+1500+ FontAwesome 5
+free icons available.
+Aenean commodo ligula
+eget dolor.
+MongoDB
+List skill/technologies
+here. You can change the
+icon above to any of the
+1500+ FontAwesome 5
+free icons available.
+Aenean commodo ligula
+eget dolor.</p>
+                </div>
+                <div class="skill">
+                    <img src="icons/nodejs.png">
+                    <h4 class="skill-title">Node.Js</h4>
+                    <p class="skill-des">List skill/technologies
+here. You can change the
+icon above to any of the
+1500+ FontAwesome 5
+free icons available.
+Aenean commodo ligula
+eget dolor.</p>
+                </div>
+                <div class="skill">
+                    <img src="icons/mongo.png">
+                    <h4 class="skill-title">MongoDB</h4>
+                    <p class="skill-des">List skill/technologies
+here. You can change the
+icon above to any of the
+1500+ FontAwesome 5
+free icons available.
+Aenean commodo ligula
+eget dolor.</p>
+
+                </div>
+                </div>
+
+        </section>
+
+        <section>
+            <h3 id="hui">A summary of My Resume</h3>
+            <div class="contain">
+                <div class="resume-colum"> <!--1st colum-->
+                    <h3 class="resume-colum-title">My Eduaction</h3>
+                    <div class="exp">
+                        <h4 class="exp-title">MSC</h4>
+                        <h5 class="exp-sub-title">DIU(2024-Running)</h5>
+                        <p>List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
+                        commodo ligula eget dolor.</p>
+                        <hr>
+                    </div>
+                    
+                    <div class="exp">
+                        <h3 class="resume-colum-title">My Eduaction</h3>
+                        <h4 class="exp-title">MSC</h4>
+                        <h5 class="exp-sub-title">DIU(2024-Running)</h5>
+                        <p>List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
+                        commodo ligula eget dolor.</p>
+                        <hr>
+                    </div>
+                    <div class="exp">
+                        <h3 class="resume-colum-title">My Eduaction</h3>
+                        <h4 class="exp-title">MSC</h4>
+                        <h5 class="exp-sub-title">DIU(2024-Running)</h5>
+                        <p>List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
+                        commodo ligula eget dolor.</p>
+                        
+                        
+                    </div>
+                </div>
+                <div class="resume-colum"><!--2nd Colum-->
+                    <h3 class="resume-colum-title">My experience</h3>
+                    <div class="exp">
+                        <h4 class="exp-title">Font-end Devoloper</h4>
+                        <h5 class="exp-sub-title">Apple Inc / 2020 - Current</h5>
+                        <div class="exp-des">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
+                        commodo ligula eget dolor.</div>
+                        <hr>
+                    </div>
+                    <div class="exp">
+                        <h4 class="exp-title">Font-end Devoloper</h4>
+                        <h5 class="exp-sub-title">Apple Inc / 2020 - Current</h5>
+                        <div class="exp-des">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
+                        commodo ligula eget dolor.</div>
+                        <hr>
+                    </div>
+                    <div class="exp">
+                        <h4 class="exp-title">Font-end Devoloper</h4>
+                        <h5 class="exp-sub-title">Apple Inc / 2020 - Current</h5>
+                        <div class="exp-des">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
+                        commodo ligula eget dolor.</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div id="tst">
+            <button  class="b-clr">Button</button>
+            </div>
+
+    </main>
+    <footer class="bg-c">
+        <section class="last-c">
+            <div class="c1">
+                <h3>Lets Connect</h3>
+                <p>Please fill out the form on this section to contact with me or call between
+9:00 A.M and 8.00 P.M ET,Monday through Friday.</p>
+                    <div class="img">
+                        <a href="https://www.facebook.com/shourav04">
+                    <img class src="icons/facebook.png"></a>
+                    <a href="" alt="please Connect FAcebook or insta ,Twitter will be coming soon.">
+                    <img src="icons/twitter.png"></a>
+                    <a href="https://www.instagram.com/shourav_0_0?igsh=enUxd3plNzJ1bmU2">
+                    <img src="icons/insta.png"></a>
+                    </div>
+            </div>
+            <div class="c2">
+                <h3>Lets Message me</h3>
+                <form action="">
+                    <input type="text" class="pad" placeholder="Your name"><br><br>
+                    <input type="email" class="pad" placeholder="your email"><br><br>
+                    <textarea cols="30" rows="10" class="pad"  placeholder="Message me"></textarea>
+                     <input class="b-clr" type="submit">
+                </form>
+
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

@@ -12,7 +12,18 @@
             background-color:chocolate;
             border-radius: 5px;
             border:none;
+            
         }
+        .b-clr {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        }
+
+button:hover {
+  transform: scale(1.2);
+}
+
+
         nav ul{
             display: flex;
            align-items: center;
@@ -39,8 +50,11 @@
         }
         #snd-half{
             display:flex;
-            align-items: center;
             justify-content: space-between; 
+            align-items:flex-start;
+            padding: 0 50px;
+            gap: 50px; 
+            
         }
         /* .skill{
             display:flex;
@@ -122,6 +136,7 @@
             margin-top: 50px;
             text-align: center;
             margin-bottom: 50px;
+        
         }
 
         .butt{
@@ -151,54 +166,78 @@
         }
         .pad{
             padding: 10px;
-            color:azure;
+            color:black;
         }
         .c1{
             margin-right: 20px;
         }
+        #shourav04{
+            font-size: 50px;
+            margin: 40px ;
+        }
 
+        .lstchk{
+            background-color: azure;
+            padding:20px;
+        }
+        
+        #pic{
+        
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            
+        } 
+        .image-box {
+            display: flex;
+            justify-content: flex-end;
+}
 
+        
     </style>
 </head>
 <body>
+
+    <!-- HEADER PART START -->  
+
     <header id="header">
         <nav>
-    <h3>Shou<span id="r">r</span>av</h3>
+    <h3 id="shourav04">Shou<span id="r">r</span>av<br>Chowdhu<span id="r">r</span>y</h3><br>
+    
     <ul>
         <li>Portfolio</li>
         <li>Blog</li>
         <li><button class="b-clr">Hire me</button></li>
+        
     </ul>
         </nav>
         <div id="snd-half">
             <div id="id">
             <h3>Hi,I am</h3>
-            <h1>Shourav Chowdhury</h1>
-            <p>I am learning Web development.I have completed basic knowledge about "HTML" and "CSS".I still want to go as an programmer.Pray for me.</p>
+            <h1>Shourav Chowdhury</h1><br>
+            <p>I'm a Computer Science student with a strong interest in problem-solving, learning, and exploring meaningful fields like machine learning and research. My goal is to work at a high-level M.Tech company where I can apply both logic and creativity to real-world challenges. I’m not just focused on coding — I’m focused on building the mindset and depth needed to truly grow in this field.</p><br>
             <button class="b-clr">Download CV</button>
             <button class="b-clr">Contact me</button>
             </div>
+            <div class="image-box"></div>
+            <img id="pic" src="icons/fnlme.png">
+            </div>
+            </div>
             
-            <img src="images.webp" width="800px" height="400px">
-            </div>  
+            
     </header>
+
+
+    <!-- MAIN PART START -->
+
+
     <main id="main">
         <section class="bc">
         <h3 class="b_h">About Me</h3>
-        <p>I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and 
-slick websites that provide real value to the end user. Thousands of clients have procured 
-exceptional resulfs while working with me. Delivering work within time and budget which meets 
-clients requirements in our mata.</p>
-        <!-- <ul class="testing">
-            <li>Name:</li>
-            Shourav Chowdhury
-            <li>Email:</li>
-            shouravchowdhur400@gmail.com
-            <li>Date of Birth:</li>
-            10 Oct 2003
-            <li>From:</li>
-            Dhaka,BD
-        </ul> -->
+        
+            <p>I'm a passionate Computer Science student on a journey to explore and master the world of technology. In my first year, I learned C and C++ and began solving problems on platforms like BeeCrowd, Codeforces, and LeetCode. In my second year, I started learning Data Structures and Algorithms (DSA), and recently, I’ve taken my first steps into Web Development — building a solid foundation in HTML and CSS. I’m committed to growing as a programmer and reaching my long-term goal of working in a top tech company. I’m always curious, always learning — and this is just the beginning.</p>
+       
         <div id="about">
             <div class="aitems">
                 <p class="it">Name:</p>
@@ -224,26 +263,22 @@ clients requirements in our mata.</p>
         <section class="skil">
             <div class="bc">
             <h3 id="c">What I do</h3>
-            <p>I have more than 10 years experience building software for clients all over the world. Below is a quick
-overview of my main technical skill sets and technologies i use. Want to find out more about my experience?Check out my online resume and project portfolio.Vanilla JavaScriptList skill/technologies here. You can change the icon above to any of the
-1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.React
-List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available.Aenean commodo ligula eget dolor.Node.js List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            <p>I’m a 2nd-year Computer Science student at Daffodil International University. In my first and early second year, I explored various areas of tech to find what truly excites me. I’ve learned programming languages like C, C++, and Java, and practiced problem-solving on platforms like BeeCrowd, Codeforces, and LeetCode. I'm deeply interested in Machine Learning and plan to pursue it strongly in the future, with the goal of working at an M.Tech-level company.
+
+Currently, I’m focusing on Web Development to build practical skills and gain internship opportunities. While the path is challenging, I believe in consistent hard work — and that’s what drives me forward.
+
+
+            </p>
                 </div>
                 <div class="class">
                 <div class="skill">
-                    <img src="icons/js.png">
-                    <h4 class="skill-title">Vanilla Javascript</h4>
-                    <p class="skill-des">List skill/technologies
-here. You can change the
-icon above to any of the
-1500+ FontAwesome 5
-free icons available.
-Aenean commodo ligula
-eget dolor.</p>
+                    <img src="icons/c.png">
+                    <h4 class="skill-title">C Programming</h4>
+                    <p class="skill-des">I started my programming journey with the C language, which gave me a strong foundation in programming logic and structure. I learned how to use variables, loops, conditionals, functions, and arrays efficiently. C helped me understand how memory management works using pointers. I’ve also solved various basic and intermediate problems to build my problem-solving skills. This experience with C has strengthened my logic and made it easier to learn other languages like C++ and Java.</p>
                 </div>
                 <div class="skill">
-                    <img src="icons/react.png">
-                    <h4 class="skill-title">React</h4>
+                    <img src="icons/c++.png">
+                    <h4 class="skill-title">c++ Programming</h4>
                     <p class="skill-des">List skill/technologies
 here. You can change the
 icon above to any of the
@@ -255,78 +290,57 @@ Node.js
 List skill/technologies
 here. You can change the
 icon above to any of the
-1500+ FontAwesome 5
-free icons available.
-Aenean commodo ligula
-eget dolor.
-MongoDB
-List skill/technologies
-here. You can change the
-icon above to any of the
-1500+ FontAwesome 5
-free icons available.
-Aenean commodo ligula
-eget dolor.</p>
+</p>
                 </div>
+                
                 <div class="skill">
-                    <img src="icons/nodejs.png">
-                    <h4 class="skill-title">Node.Js</h4>
-                    <p class="skill-des">List skill/technologies
-here. You can change the
-icon above to any of the
-1500+ FontAwesome 5
-free icons available.
-Aenean commodo ligula
-eget dolor.</p>
-                </div>
-                <div class="skill">
-                    <img src="icons/mongo.png">
-                    <h4 class="skill-title">MongoDB</h4>
-                    <p class="skill-des">List skill/technologies
-here. You can change the
-icon above to any of the
-1500+ FontAwesome 5
-free icons available.
-Aenean commodo ligula
-eget dolor.</p>
+                    <img src="icons/java.png">
+                    <h4 class="skill-title">Java Programming</h4>
+                    <p class="skill-des">I learned Java to deepen my understanding of object-oriented programming in a real-world context. Through Java, I practiced core concepts like classes, objects, constructors, inheritance, abstraction, and interfaces. I also learned how to structure programs using packages and how to handle input/output operations. Java’s simplicity and platform independence made it easier to build small-scale projects and understand application-level programming. This language helped me connect theory with practical coding and improved my programming mindset overall.</p>
 
                 </div>
+                
+                </div>
+                <div class="class">
+                    <div class="skill">
+                        <img src="icons/ml.png">
+                        <h4 class="skill-title">Machine Learning</h4>
+                        <p>I’ve started exploring Machine Learning to understand how data-driven models can solve real-world problems. I’ve learned the basics of supervised and unsupervised learning, and studied common algorithms like linear regression, decision trees, and k-means clustering. I’m familiar with using Python libraries such as NumPy, Pandas, and scikit-learn for building simple ML models. This field matches my interest in logic, data, and math, and I aim to deepen my ML knowledge to pursue opportunities in high-level tech companies. It’s one of my long-term goals to become strong in this domain.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="icons/math.png">
+                        <h4 class="skill-title"><Math></Math></h4>
+
+                        <p>Mathematics plays a vital role in shaping how I think and solve problems. It taught me patience, precision, and logical reasoning — skills that influence every part of my learning journey. More than a subject, math became a mindset that helps me approach challenges with clarity and confidence.</p>
+                    </div>
                 </div>
 
         </section>
 
-        <section>
+        <section class="lstchk">
             <h3 id="hui">A summary of My Resume</h3>
             <div class="contain">
                 <div class="resume-colum"> <!--1st colum-->
                     <h3 class="resume-colum-title">My Eduaction</h3>
                     <div class="exp">
-                        <h4 class="exp-title">MSC</h4>
-                        <h5 class="exp-sub-title">DIU(2024-Running)</h5>
-                        <p>List skill/technologies here. You can change the icon above
-                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                        commodo ligula eget dolor.</p>
+                        <h4 class="exp-title">SSC</h4>
+                        <h5 class="exp-sub-title">PLAHS(2020)</h5>
+                        <p> I built a strong foundation in core subjects like mathematics, science, and computer basics. I learned essential concepts in arithmetic, algebra, and problem-solving, along with basic principles of physics and chemistry. Additionally, I developed fundamental computer skills, which sparked my interest in programming and technology. This broad base prepared me well for higher studies and my journey into tech.</p>
                         <hr>
                     </div>
                     
                     <div class="exp">
-                        <h3 class="resume-colum-title">My Eduaction</h3>
-                        <h4 class="exp-title">MSC</h4>
-                        <h5 class="exp-sub-title">DIU(2024-Running)</h5>
-                        <p>List skill/technologies here. You can change the icon above
-                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                        commodo ligula eget dolor.</p>
+                        <!-- <h3 class="resume-colum-title">My Eduaction</h3> -->
+                        <h4 class="exp-title">HSC</h4>
+                        <h5 class="exp-sub-title">GCPSC(2022)</h5>
+                        <p>I have been exploring various areas of technology and strengthening my problem-solving skills. I have focused on understanding core concepts like data structures and algorithms and have begun learning web development. College has also helped me develop critical thinking, discipline, and a growth mindset, which are essential for achieving my future goals in the tech industry.</p>
                         <hr>
                     </div>
                     <div class="exp">
-                        <h3 class="resume-colum-title">My Eduaction</h3>
-                        <h4 class="exp-title">MSC</h4>
+                        <!-- <h3 class="resume-colum-title">My Eduaction</h3> -->
+                        <h4 class="exp-title">BSC</h4>
                         <h5 class="exp-sub-title">DIU(2024-Running)</h5>
-                        <p>List skill/technologies here. You can change the icon above
-                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                        commodo ligula eget dolor.</p>
-                        
-                        
+                        <p>Over the past two years at university, I have actively engaged in exploring diverse technological fields and strengthening my foundational skills. My focus has been on developing problem-solving abilities through practice and studying core concepts such as data structures and algorithms. I have also embarked on learning web development to gain practical experience and broaden my skill set. Throughout this journey, I have cultivated a disciplined approach to learning and a growth mindset, which drives me toward my goal of building a career in the technology sector.</p>   
                     </div>
                 </div>
                 <div class="resume-colum"><!--2nd Colum-->
@@ -340,50 +354,60 @@ eget dolor.</p>
                         <hr>
                     </div>
                     <div class="exp">
-                        <h4 class="exp-title">Font-end Devoloper</h4>
-                        <h5 class="exp-sub-title">Apple Inc / 2020 - Current</h5>
-                        <div class="exp-des">List skill/technologies here. You can change the icon above
-                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                        commodo ligula eget dolor.</div>
+                        <h4 class="exp-title">Problem solving practice</h4>
+                        <h5 class="exp-sub-title">2024 - Current</h5>
+                        <div class="exp-des">Solved problems across platforms like BeeCrowd, LeetCode, and Codeforces, building a strong foundation in logic and algorithms.</div>
                         <hr>
                     </div>
                     <div class="exp">
-                        <h4 class="exp-title">Font-end Devoloper</h4>
-                        <h5 class="exp-sub-title">Apple Inc / 2020 - Current</h5>
-                        <div class="exp-des">List skill/technologies here. You can change the icon above
-                        to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                        commodo ligula eget dolor.</div>
+                        <h4 class="exp-title">Web Development Learning</h4>
+                        <h5 class="exp-sub-title">2025 - Current</h5>
+                        <div class="exp-des">Learning the basics of HTML and CSS and built several small front-end projects to practice layout, styling, and responsiveness.</div>
+                    </div>
+
+                    <div class="exp">
+                        <h4 class="exp-title">Machine Learning Exploring</h4>
+                        <h5 class="exp-sub-title">2025 - Current</h5>
+                        <div class="exp-des">Learning core ML concepts and working with Python libraries learn to build beginner-level models.</div>
                     </div>
                 </div>
 
             </div>
         </section>
         <div id="tst">
-            <button  class="b-clr">Button</button>
+            <button  class="b-clr">Download CV</button>
             </div>
 
     </main>
+
+    <!-- footer  -->
+
     <footer class="bg-c">
         <section class="last-c">
             <div class="c1">
                 <h3>Lets Connect</h3>
-                <p>Please fill out the form on this section to contact with me or call between
-9:00 A.M and 8.00 P.M ET,Monday through Friday.</p>
+                <p>Please fill out the form on this right section to contact with me or connect with me through the social media and <br> "Dont forget to stay happy"<br><br>
+                    <div class="br"></div></p>
                     <div class="img">
-                        <a href="https://www.facebook.com/shourav04">
-                    <img class src="icons/facebook.png"></a>
-                    <a href="" alt="please Connect FAcebook or insta ,Twitter will be coming soon.">
-                    <img src="icons/twitter.png"></a>
-                    <a href="https://www.instagram.com/shourav_0_0?igsh=enUxd3plNzJ1bmU2">
-                    <img src="icons/insta.png"></a>
+                        <a href="https://www.facebook.com/shourav04" target="_blank">
+                    <img class src="icons/nfb.png" height="20px" width="20px"></a>
+                    <a href="https://www.instagram.com/shourav_0_0?igsh=enUxd3plNzJ1bmU2" target="_blank">
+                    <img src="icons/ninsta.png" height="20px" width="20px"></a>
+                    <a href="https://www.linkedin.com/in/shourav-chowdhury-3729072a5/" target="_blank">
+                    <img src="icons/nlinkid.png" height="20px" width="20px"></a>
+                    <a href="https://github.com/shourav-00" target="_blank">
+                    <img src="icons/github.png" height="20px" width="20px"></a>
+                    
                     </div>
+                    
             </div>
             <div class="c2">
                 <h3>Lets Message me</h3>
                 <form action="">
-                    <input type="text" class="pad" placeholder="Your name"><br><br>
-                    <input type="email" class="pad" placeholder="your email"><br><br>
-                    <textarea cols="30" rows="10" class="pad"  placeholder="Message me"></textarea>
+                    <input type="text" class="pad" required placeholder="Your name"><br><br>
+                    <input type="email" class="pad"required placeholder="your email"><br><br>
+                    <textarea cols="30" rows="10" class="pad" required placeholder="Message me"></textarea>
+                    <br><br>
                      <input class="b-clr" type="submit">
                 </form>
 
